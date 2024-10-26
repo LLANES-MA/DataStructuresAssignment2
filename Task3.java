@@ -119,7 +119,7 @@ public class Task3 {
         Task3 scheduler = new Task3(heap.length);
         boolean[] jobInserted = new boolean[size]; // Track jobs inserted into scheduler
         int executedJobs = 0;
-        System.out.print("[");
+        System.out.print("Execution order: [");
 
         while (!allJobsProcessed(jobInserted) || !scheduler.isEmpty()) {
             // Insert jobs that have arrived up to currentProcessTime
